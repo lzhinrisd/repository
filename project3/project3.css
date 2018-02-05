@@ -1,0 +1,134 @@
+
+#header {
+  position: fixed;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+}
+#header nav {
+  max-width: 900px;
+  margin: 0 auto;
+}
+#header a {
+  color: white;
+  display: inline-block;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+#header a:hover, #header a.active {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#position-block {
+  position: fixed;
+  z-index: 1000;
+  color: white;
+}
+
+h1 {
+  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 600;
+  color: white;
+  font-size: 69px;
+  line-height: 78px;
+  padding: 10px 0px 0px 20px;
+  margin: 0;
+}
+
+p {  font-family: "Dosis";
+  font-style: normal;
+  font-weight: 600;
+  color: black;
+  font-size: 69px;
+  line-height: 78px;
+  padding: 10px 0px 0px 20px;
+  margin: 0;
+
+}
+
+article {
+  position: relative;
+  -moz-box-shadow: black 0px 0px 15px;
+  -webkit-box-shadow: black 0px 0px 15px;
+  box-shadow: black 0px 0px 0px;
+}
+article header {
+  padding-top: 30px;
+}
+article .content {
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 60px;
+  -webkit-column-gap: 60px;
+  column-gap: 60px;
+  padding: 0 20px 60px 20px;
+}
+article .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.panel {
+  position: relative;
+  width: 100%;
+}
+
+.panel.zero article {
+  background-color: white;
+}
+.panel.one article {
+  background-color: black;
+}
+
+.panel.two article {
+  background-color: black;
+}
+
+.panel.three article {
+  background-color: black;
+}
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 10000;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}

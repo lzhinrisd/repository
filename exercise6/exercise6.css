@@ -1,0 +1,157 @@
+body{
+  background-color: #fafad2;
+  margin: 5rem;
+}
+.content{
+  display:-webkit-flex;
+  display:flex;
+  height:200px;
+  align-items: center;
+  justify-content: center;
+}
+.title{
+  position:absolute;
+  top:2rem;
+  left:17rem;
+  letter-spacing: -0.01rem;
+
+
+
+}
+
+h1{
+  font-family: Helvetica, sans-serif;
+  text-align: left;
+  font-size: 2rem;
+  width:350px;
+  letter-spacing: -0.01rem;
+}
+h2{
+  font-family: Helvetica, sans-serif;
+  text-align: left;
+  font-size: 1rem;
+  width:150px;
+letter-spacing: -0.01rem;
+}
+h3{
+  font-family: Helvetica, sans-serif;
+  text-align: left;
+  font-size: 0.5rem;
+  width:250px;
+  letter-spacing: -0.01rem;
+}
+h4{
+  font-family: Helvetica, sans-serif;
+  text-align: left;
+  font-size: 2rem;
+letter-spacing: -0.01rem;
+}
+
+.container {
+	height: 100vh;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+.box {
+	width: 60px;
+	height: 60px;
+	margin: 0px;
+	background-color: rgb(0,255,0);
+}
+.grid1{
+	background: cadetblue;
+  animation-name: drive;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+}
+.grid2{
+
+	background: black;
+  animation-name: drive2;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+}
+.grid3{
+	transform: translate(80px,0px);
+	background: red;
+  z-index: 2;
+
+}
+.grid4{
+	transform: translate(20px,-180px);
+	background: grey;
+  animation-name: drive3;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+}
+.grid5{
+	transform: translate(60px,0px);
+	background: black;
+  animation-name: drive4;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+}
+.grid6{
+	transform: translate(-100px,75px);
+	background: grey;
+  animation-name: drive5;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+}
+.grid7{
+	transform: translate(60px,0px);
+	background: yellow;
+  animation-name: drive6;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+}
+
+@keyframes drive {
+  from { transform: translate(200px);
+  }
+  to { transform: translate(0);
+    }
+}
+@keyframes drive2 {
+  from { transform: translate(140px);
+  }
+  to { transform: translate(0);
+    }
+}
+@keyframes drive3 {
+  from { transform: translate(20px,0px);
+  }
+  to { transform: translate(20px,-180px);
+    }
+}
+@keyframes drive4 {
+  from { transform: translate(0px,0px);
+  }
+  to { transform: translate(60px,0px);
+    }
+}
+@keyframes drive5 {
+  from { transform: translate(-100px,0px);
+  }
+  to { transform: translate(-100px,75px);
+    }
+}
+@keyframes drive6 {
+  from { transform: translate(-120px,0px);
+  }
+  to { transform: translate(60px,0px);
+    }
+}
